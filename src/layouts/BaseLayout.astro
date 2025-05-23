@@ -1,0 +1,19 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+---
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={'Ara Zevallos Studio'} />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{'Ara Zevallos Studio'}</title>
+    </head>
+    <body class="font-sans">
+        <Navbar />
+        <slot />
+    </body>
+</html>

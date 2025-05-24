@@ -1,15 +1,53 @@
-<nav class="fixed top-0 left-0 w-full z-50 px-6 md:px-24 flex items-center justify-between backdrop-blur-md">
-    <div class="hidden md:flex flex-1 justify-end gap-12 text-sm font-medium">
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full z-50 px-6 md:px-24 py-4 flex items-center justify-between backdrop-blur-xs">
+    <!-- Izquierda -->
+    <div class="hidden md:flex flex-1 justify-end gap-12 text-md font-medium text-gray-100">
         <a href="#about" class="hover:text-[#92c7de] transition">About</a>
         <a href="#services" class="hover:text-[#92c7de] transition">Services</a>
     </div>
 
-    <div class="flex-shrink-0 mx-8">
-        <img src="/LOGO.png" alt="Logo" class="h-22 mx-auto" />
+    <!-- Logo -->
+    <div class="flex-shrink-0 md:mx-8">
+        <img src="/LOGO.png" alt="Logo" class="h-18 mx-auto" />
     </div>
 
-    <div class="hidden md:flex flex-1 justify-start gap-12 text-sm font-medium">
+    <!-- Derecha -->
+    <div class="hidden md:flex flex-1 justify-start gap-12 text-md font-medium text-gray-100">
         <a href="#portfolio" class="hover:text-[#92c7de] transition">Portfolio</a>
         <a href="#contact" class="hover:text-[#92c7de] transition">Contact</a>
     </div>
+
+    <!-- Menú hamburguesa mobile -->
+    <div class="md:hidden">
+        <button id="menuToggle" class="text-white focus:outline-none">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+            </svg>
+        </button>
+    </div>
 </nav>
+
+<!-- Menú colapsable -->
+<div id="mobileMenu" class="md:hidden fixed top-24 left-0 w-full backdrop-blur-xs text-white text-center hidden z-60">
+    <a href="#about" class="block py-2 hover:text-[#92c7de]">About</a>
+    <a href="#services" class="block py-2 hover:text-[#92c7de]">Services</a>
+    <a href="#portfolio" class="block py-2 hover:text-[#92c7de]">Portfolio</a>
+    <a href="#contact" class="block py-2 hover:text-[#92c7de]">Contact</a>
+</div>
+
+<!-- JS para toggle -->
+<script>
+    const menuBtn = document.getElementById('menuToggle');
+    const menu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>

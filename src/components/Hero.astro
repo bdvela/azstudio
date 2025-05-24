@@ -1,5 +1,5 @@
 <section
-    class="relative w-full min-h-screen bg-gradient-to-br from-[rgb(209,139,163)] to-[#d69fb6] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-24 pt-32 md:pt-0"
+    class="relative h-screen bg-gradient-to-br from-[rgb(209,139,163)] to-[#d69fb6] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-24 pt-32 md:pt-0"
 >
     <!-- 📝 TEXTO IZQUIERDA -->
     <div class="md:w-1/2 text-center md:text-left py-12">
@@ -12,9 +12,9 @@
             <span class="text-white/70 italic">toque profesional</span> ✨
         </h1>
         <p class="text-base md:text-lg text-white/90 mb-6">
-            <span class="font-medium">Experiencia premium</span> en <span class="underline">uñas</span>, <span
-                class="underline">maquillaje</span
-            >, <span class="underline">pestañas</span> y <span class="underline">pedicure</span> con el estilo que <span
+            <span class="font-medium">Experiencia premium</span> en <span class="font-medium">uñas</span>, <span
+                class="font-medium">maquillaje</span
+            >, <span class="font-medium">pestañas</span> y <span class="font-medium">pedicure</span> con la calidad que <span
                 class="font-semibold">mereces</span
             >.
         </p>
@@ -35,7 +35,13 @@
     </div>
 
     <!-- 📸 IMAGEN DERECHA -->
-    <div class="mb-10 md:mb-0 flex justify-center md:justify-end items-start md:items-center h-full">
-        <img src="/Araceli_Zevallos2.png" alt="Ara Zevallos" class="w-full object-cover mt-[-13rem]" />
+    <div class="md:w-1/2 hidden mb-10 md:mb-0 md:flex justify-center md:justify-end items-start md:items-end h-full">
+        <img src="/Araceli_Zevallos2.png" alt="Ara Zevallos" />
+    </div>
+    <div class="relative md:hidden w-screen h-full flex justify-center items-end">
+        <img src="/Araceli_Zevallos.jpg" alt="Ara Zevallos" class="w-full h-auto object-cover" />
+
+        <!-- 🟣 Gradiente overlay -->
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#d495ad] to-transparent"></div>
     </div>
 </section>

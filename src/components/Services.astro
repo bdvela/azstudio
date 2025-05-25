@@ -1,25 +1,133 @@
-<section id="services" class="relative z-10 w-full bg-white pt-30 pb-20 px-6 md:px-24">
-    <h2 class="text-3xl md:text-4xl font-serif text-center text-gray-900 mb-12">Nuestros Servicios</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition relative overflow-hidden">
-            <img src="/servicios/uñas.jpg" alt="Uñas" class="w-full h-80 object-cover rounded-md mb-4" />
-            <h3 class="text-xl font-semibold text-[#d18ba3] mb-1">Uñas</h3>
-            <p class="text-sm text-gray-700">Manicure, acrílicas, esmaltado semipermanente y más.</p>
+<section id="services" class="bg-white py-24 px-6 md:px-24">
+    <div class="md:px-24 mx-auto">
+        <!-- 🖋️ Título -->
+        <h2 class="text-3xl md:text-5xl font-serif text-center text-[#d18ba3] font-semibold mb-4 leading-snug">
+            Nuestros <span class="text-[#c97797] font-bold">Servicios</span>
+        </h2>
+
+        <!-- 🌸 Separador decorativo -->
+        <div class="flex justify-center mb-6">
+            <div class="w-32 h-[2px] bg-gradient-to-r from-pink-100 via-[#d18ba3] to-pink-100 rounded-full"></div>
         </div>
-        <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition relative overflow-hidden">
-            <img src="/servicios/makeup.jpg" alt="Maquillaje" class="w-full h-80 object-cover rounded-md mb-4" />
-            <h3 class="text-xl font-semibold text-[#d18ba3] mb-1">Maquillaje</h3>
-            <p class="text-sm text-gray-700">Social, artístico, para eventos especiales o sesiones.</p>
-        </div>
-        <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition relative overflow-hidden">
-            <img src="/servicios/pestañas.jpg" alt="Pestañas" class="w-full h-80 object-cover rounded-md mb-4" />
-            <h3 class="text-xl font-semibold text-[#d18ba3] mb-1">Pestañas</h3>
-            <p class="text-sm text-gray-700">Lifting, extensiones clásicas, volumen ruso y más.</p>
-        </div>
-        <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition relative overflow-hidden">
-            <img src="/servicios/pedicure.jpg" alt="Pedicure" class="w-full h-80 object-cover rounded-md mb-4" />
-            <h3 class="text-xl font-semibold text-[#d18ba3] mb-1">Pedicure</h3>
-            <p class="text-sm text-gray-700">Spa, limpieza profunda, decoración y tratamientos.</p>
-        </div>
+
+        <!-- ✏️ Descripción -->
+        <p class="text-center text-gray-600 md:text-xl max-w-2xl mx-auto mb-12">
+            Cada detalle cuenta. Descubre nuestros servicios diseñados para
+            <span class="font-semibold text-[#d18ba3]">realzar tu belleza</span> y brindarte una
+            <span class="font-semibold text-[#d18ba3]"
+                >experiencia única, con amor y <span class="italic">profesionalismo</span>
+                .
+            </span>
+
+            <!-- 📷 Grid de servicios -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- 💅 Card: Uñas -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-pink-100 hover:-translate-y-1"
+                >
+                    <img src="/servicios/unias.jpg" alt="Uñas" class="w-full md:h-80 h-64 object-cover" />
+                    <div class="p-6 text-center">
+                        <h3 class="md:text-3xl text-2xl font-semibold text-[#d18ba3] mb-2">Uñas</h3>
+                        <p class="text-gray-600 mb-8 md:text-xl">
+                            Diseños modernos o clásicos, con acabado profesional y duradero.
+                        </p>
+                        <div
+                            class="inline-block bg-pink-50 text-[#d18ba3] font-semibold text-lg px-4 py-2 rounded-full"
+                        >
+                            Desde S/50
+                        </div>
+                        <a
+                            href="https://wa.me/519XXXXXX?text=Hola%20quiero%20reservar%20una%20cita%20para%20Uñas"
+                            target="_blank"
+                            class="mt-4 inline-block text-sm text-[#92c7de] hover:underline font-medium text-center"
+                        >
+                            Reservar ahora →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 💄 Card: Makeup -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-pink-100 hover:-translate-y-1"
+                >
+                    <img src="/servicios/makeup.jpg" alt="Makeup" class="w-full md:h-80 h-64 object-cover" />
+                    <div class="p-6 text-center">
+                        <h3 class="md:text-3xl text-2xl font-semibold text-[#d18ba3] mb-2">Makeup</h3>
+                        <p class="text-gray-600 mb-8 md:text-xl">
+                            Look de día, de noche o eventos especiales. Belleza a tu estilo.
+                        </p>
+                        <div
+                            class="inline-block bg-pink-50 text-[#d18ba3] font-semibold text-lg px-4 py-2 rounded-full"
+                        >
+                            Desde S/50
+                        </div>
+                        <a
+                            href="https://wa.me/519XXXXXX?text=Hola%20quiero%20una%20cita%20para%20Makeup"
+                            target="_blank"
+                            class="mt-4 inline-block text-sm text-[#92c7de] hover:underline font-medium text-center"
+                        >
+                            Reservar ahora →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 👁️ Card: Cejas y Pestañas -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-pink-100 hover:-translate-y-1"
+                    data-aos="fade-in"
+                    data-aos-delay="300"
+                    ...
+                >
+                    <img
+                        src="/servicios/pestanias.jpg"
+                        alt="Cejas y Pestañas"
+                        class="w-full md:h-80 h-64 object-cover"
+                    />
+                    <div class="p-6 text-center">
+                        <h3 class="md:text-3xl text-2xl font-semibold text-[#d18ba3] mb-2">Cejas y Pestañas</h3>
+                        <p class="text-gray-600 mb-8 md:text-xl">
+                            Extensiones o lifting que realzan tu mirada de forma natural.
+                        </p>
+                        <div
+                            class="inline-block bg-pink-50 text-[#d18ba3] font-semibold text-lg px-4 py-2 rounded-full"
+                        >
+                            Desde S/50
+                        </div>
+                        <a
+                            href="https://wa.me/519XXXXXX?text=Hola%20quiero%20una%20cita%20para%20Cejas%20y%20Pestañas"
+                            target="_blank"
+                            class="mt-4 inline-block text-sm text-[#92c7de] hover:underline font-medium text-center"
+                        >
+                            Reservar ahora →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 🦶 Card: Pedicure -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-pink-100 hover:-translate-y-1"
+                >
+                    <img src="/servicios/pedicure.jpg" alt="Pedicure" class="w-full md:h-80 h-64 object-cover" />
+                    <div class="p-6 text-center">
+                        <h3 class="md:text-3xl text-2xl font-semibold text-[#d18ba3] mb-2">Pedicure</h3>
+                        <p class="text-gray-600 mb-8 md:text-xl">
+                            Cuidado y estética de pies con un toque profesional y relajante.
+                        </p>
+                        <div
+                            class="inline-block bg-pink-50 text-[#d18ba3] font-semibold text-lg px-4 py-2 rounded-full"
+                        >
+                            Desde S/50
+                        </div>
+                        <a
+                            href="https://wa.me/519XXXXXX?text=Hola%20quiero%20una%20cita%20para%20Pedicure"
+                            target="_blank"
+                            class="mt-4 inline-block text-sm text-[#92c7de] hover:underline font-medium text-center"
+                        >
+                            Reservar ahora →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </p>
     </div>
 </section>

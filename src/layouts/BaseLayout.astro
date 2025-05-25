@@ -12,9 +12,29 @@ import Navbar from '../components/Navbar.astro';
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <title>{'Ara Zevallos Studio'}</title>
     </head>
-    <body class="font-sans">
+    <body class="font-sans scroll-smooth">
         <Navbar />
         <slot />
+        <!-- Botón flotante de WhatsApp -->
+        <a
+            href="https://wa.me/519XXXXXX?text=Hola%20quiero%20reservar%20una%20cita%20en%20Ara%20Zevallos%20Studio"
+            target="_blank"
+            class="fixed bottom-5 right-5 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300 animate-bounce md:animate-none group lg:hidden"
+            aria-label="WhatsApp Ara Zevallos"
+        >
+            <!-- Tooltip en desktop -->
+            <span
+                class="absolute right-full mr-3 hidden md:inline-block bg-[#25D366] text-white text-sm px-3 py-1 rounded-full shadow-md group-hover:opacity-100 opacity-0 transition"
+            >
+                Agenda tu cita 💬
+            </span>
+
+            <!-- Ícono WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.79 11.79 0 0 0 2.88 18.57L2 22l3.52-.92A11.79 11.79 0 0 0 21 3.48z"></path>
+            </svg>
+        </a>
+
         <script type="module" src="/js/embla-init.js"></script>
     </body>
 </html>
